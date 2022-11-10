@@ -19,15 +19,8 @@ const ProfileComponent = (props) => {
         <div className="profileContainer">
           <h1>個人資料頁面</h1>
           <h3>姓名: {currentUser.user.username}</h3>
-          <p>
-            <strong>職稱: {currentUser.user.role}</strong>
-          </p>
-          <p>
-            <strong>ID: {currentUser.user._id}</strong>
-          </p>
-          <p>
-            <strong>email: {currentUser.user.email}</strong>
-          </p>
+          <p>職稱: {currentUser.user.role}</p>
+          <p>email: {currentUser.user.email}</p>
         </div>
       )}
     </div>

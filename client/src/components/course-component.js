@@ -58,24 +58,18 @@ const CourseComponent = (props) => {
         <div className="courseContainer">
           <div className="cards">
             {courseData.map((course) => (
-              <div className="card">
+              <div key={course._id} className="card">
                 <div className="cardBody">
-                  <h5 key={course.id} className="cardTitle">
-                    {course.title}
-                  </h5>
-                  <p key={course.id} className="cardText">
+                  <h5 className="cardTitle">{course.title}</h5>
+                  <p className="cardText">
                     導師 : {course.instructor.username}
                   </p>
-                  <p key={course.id} className="cardText">
-                    課程介紹:{course.description}
-                  </p>
-                  <p key={course.id} className="cardText">
+                  <p className="cardText">課程介紹:{course.description}</p>
+                  <p className="cardText">
                     學生人數 : {course.student.length}位
                   </p>
                   <div>
-                    <button key={course.id} type="submit">
-                      價錢:{course.price}
-                    </button>
+                    <button type="submit">價錢:{course.price}</button>
                   </div>
                   <br />
                 </div>

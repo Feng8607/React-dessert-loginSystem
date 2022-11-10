@@ -8,7 +8,7 @@
   margin: 0.5rem;
 }
 .loginPage div label {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .loginPage div input {
   font-size: 1rem;
@@ -33,10 +33,16 @@
   border-radius: 16px;
   font-size: 1rem;
   margin: 0.5rem;
-}
-.loginPage div .formBtn button .registerButton {
-  color: black;
-}
-.loginPage div .formBtn button:hover {
+  background-color: aliceblue;
+  color: #5a2d00;
+  border: 1px solid #5a2d00;
   cursor: pointer;
+}
+.loginPage div .formBtn button a {
+  color: #5a2d00;
+}
+.loginPage div .formBtn button:hover,
+.loginPage div .formBtn a:hover {
+  color: aliceblue;
+  background-color: #5a2d00;
 }/*# sourceMappingURL=Login.css.map */

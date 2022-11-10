@@ -6,7 +6,7 @@
     flex-direction: column;
     margin: 0.5rem;
     label {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
     input {
       font-size: 1rem;
@@ -29,12 +29,18 @@
         border-radius: 16px;
         font-size: 1rem;
         margin: 0.5rem;
-        .registerButton {
-          color: black;
+        background-color: aliceblue;
+        color: #5a2d00;
+        border: 1px solid #5a2d00;
+        cursor: pointer;
+        a {
+          color: #5a2d00;
         }
       }
-      button:hover {
-        cursor: pointer;
+      button:hover,
+      a:hover {
+        color: aliceblue;
+        background-color: #5a2d00;
       }
     }
   }

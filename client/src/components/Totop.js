@@ -1,11 +1,20 @@
 import React from "react";
 import { useState, useEffect } from "react";
 const BacktotopButton = () => {
-  const [, SetbacktotopButton] = useState(false);
+  const [backtotopButton, SetbacktotopButton] = useState(false);
+
+  const scrollUp = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.screenY > 100) {
+      let heightToHidden = 250;
+
+      const winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+
+      if (winScroll > heightToHidden) {
         SetbacktotopButton(true);
       } else {
         SetbacktotopButton(false);
@@ -13,13 +22,9 @@ const BacktotopButton = () => {
     });
   }, []);
 
-  const scrollUp = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <div className="scrollup">
-      {BacktotopButton && (
+      {backtotopButton && (
         <button className="top" onClick={scrollUp}>
           TOP
         </button>

@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 body {
@@ -40,7 +41,6 @@ a {
 }
 .nav_header .header .nav_menu {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -372,10 +372,10 @@ a {
   margin: 0.5rem;
 }
 .register div label {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .register div input {
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 0.5rem 0.25rem;
   border: 1px solid black;
   border-radius: 12px;
@@ -386,14 +386,22 @@ a {
   flex-direction: row;
 }
 .register div div button {
-  color: black;
   align-items: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0.5rem;
+  padding: 0.25rem;
   border-radius: 16px;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  background-color: aliceblue;
+  color: #5a2d00;
+  border: 1px solid #5a2d00;
+  cursor: pointer;
+}
+.register div div button:hover {
+  color: #ffffff;
+  background-color: #5a2d00;
 }
 
 .coursePage {
@@ -401,6 +409,10 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+.coursePage h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 .coursePage .courseContainer {
   display: flex;
@@ -459,7 +471,7 @@ a {
   padding: 1rem;
 }
 .postCourse .form-group div {
-  margin: 0.5rem;
+  margin: 0 0.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -468,7 +480,7 @@ a {
 }
 .postCourse .form-group div input,
 .postCourse .form-group div textarea {
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 0.5rem 0.25rem;
   border: 1px solid black;
   border-radius: 12px;
@@ -495,6 +507,15 @@ a {
   text-align: center;
   padding-top: 1rem;
 }
+.profilePage h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.profilePage h3,
+.profilePage p {
+  font-size: 1rem;
+  font-weight: 500;
+}
 .profilePage .profileContainer {
   min-height: 80vh;
   display: flex;
@@ -518,7 +539,8 @@ a {
   text-align: center;
 }
 .enrollPage .studentEnroll .enrollTitle {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 .enrollPage .studentEnroll h2 {
   margin-bottom: 0.75rem;
@@ -610,7 +632,7 @@ a {
   position: fixed;
   bottom: 5rem;
   right: 2rem;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: rgb(255, 255, 255);
   color: #5a2d00;
   font-size: 1rem;

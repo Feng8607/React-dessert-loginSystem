@@ -19,6 +19,7 @@ function App() {
   return (
     <BrowserRouter>
       <NavComponent currentUser={currentUser} setCurrentUser={setCurrentUser} />
+      <TotopButton />
       <Routes>
         <Route path="/" element={<HomeComponent />} />
         <Route path="/register" element={<RegisterComponent />} />
@@ -70,7 +71,7 @@ function App() {
           }
         />
       </Routes>
-      <TotopButton />
+
       <Footer />
     </BrowserRouter>
   );
