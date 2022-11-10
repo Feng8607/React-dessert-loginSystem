@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "http://localhost:8080/api/email";
+const API_URL = "https://react-loginsystem.herokuapp.com/api/email";
 
 class EmailService {
   email(email) {
