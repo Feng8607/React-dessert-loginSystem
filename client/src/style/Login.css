@@ -1,0 +1,42 @@
+.loginPage {
+  min-height: 80vh;
+  margin: 1rem;
+}
+.loginPage div {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+.loginPage div label {
+  font-size: 1.5rem;
+}
+.loginPage div input {
+  font-size: 1rem;
+  padding: 0.5rem 0.25rem;
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 90%;
+}
+.loginPage div h2 {
+  text-align: center;
+}
+.loginPage div .formBtn {
+  display: flex;
+  flex-direction: row;
+}
+.loginPage div .formBtn button {
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.25rem;
+  border-radius: 16px;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+.loginPage div .formBtn button .registerButton {
+  color: black;
+}
+.loginPage div .formBtn button:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=Login.css.map */

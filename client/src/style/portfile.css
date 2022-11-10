@@ -1,0 +1,11 @@
+.AboutPage {
+  min-height: 80vh;
+  text-align: center;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.AboutPage nav ul li {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}/*# sourceMappingURL=portfile.css.map */

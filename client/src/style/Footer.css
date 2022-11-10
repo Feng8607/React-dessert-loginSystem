@@ -1,0 +1,124 @@
+.footerPage {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  align-items: center;
+}
+.footerPage .footercon {
+  justify-content: center;
+  display: flex;
+  margin-top: 0.5rem;
+  width: 80%;
+}
+.footerPage .footercon div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  flex-grow: 1;
+}
+.footerPage .footercon div .footitem {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex: 1 1 250px;
+}
+.footerPage .footercon div .footitem h2 {
+  color: rgb(117, 164, 226);
+  font-size: 2rem;
+  border-bottom: 3px rgb(117, 164, 226) dotted;
+  text-align: center;
+}
+.footerPage .footercon div .footitem nav {
+  text-align: center;
+}
+.footerPage .footercon div .footitem nav ul li {
+  list-style-type: none;
+}
+.footerPage .footercon div .footitem nav ul li a {
+  font-size: 1.5rem;
+  color: rgb(117, 164, 226);
+}
+.footerPage .footercon div .footDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex: 1 1 250px;
+}
+.footerPage .footercon div .footDescription h2 {
+  color: rgb(117, 164, 226);
+  font-size: 2rem;
+  border-bottom: 3px rgb(117, 164, 226) dotted;
+  text-align: center;
+}
+.footerPage .footercon div .footDescription nav {
+  text-align: center;
+}
+.footerPage .footercon div .footDescription nav ul li {
+  list-style-type: none;
+}
+.footerPage .footercon div .footDescription nav ul li a {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+.footerPage .footercon div .footDescription nav button {
+  border-radius: 1rem;
+  padding: 0.25rem;
+  font-size: 1rem;
+  color: #5a2d00;
+}
+.footerPage .footercon div .footDescription input {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #5a2d00;
+}
+.footerPage .footercon div .footDescription input,
+.footerPage .footercon div .footDescription button {
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+.footerPage .footercon div .footDescription button:hover {
+  cursor: pointer;
+}
+.footerPage .footerIcon {
+  display: flex;
+  justify-content: center;
+}
+.footerPage .footerIcon nav {
+  text-align: center;
+}
+.footerPage .footerIcon nav ul {
+  display: flex;
+}
+.footerPage .footerIcon nav ul li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+.footerPage .footerIcon nav ul li a {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+.footerPage .footerIcon nav ul li a img {
+  width: 5vw;
+  height: 5vw;
+}
+.footerPage .copyright {
+  width: 100%;
+  text-align: center;
+  background-color: #5a2d00;
+  color: rgb(252, 252, 252);
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .footerPage .footerIcon nav ul li a img {
+    width: 10vw;
+    height: 10vw;
+  }
+}/*# sourceMappingURL=Footer.css.map */

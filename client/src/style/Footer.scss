@@ -1,0 +1,135 @@
+.footerPage {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  align-items: center;
+  .footercon {
+    justify-content: center;
+    display: flex;
+    margin-top: 0.5rem;
+    width: 80%;
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      width: 60%;
+      flex-grow: 1;
+      .footitem {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        width: fit-content;
+        flex: 1 1 250px;
+        h2 {
+          color: rgb(117, 164, 226);
+          font-size: 2rem;
+          border-bottom: 3px rgb(117, 164, 226) dotted;
+          text-align: center;
+        }
+        nav {
+          text-align: center;
+          ul {
+            li {
+              list-style-type: none;
+              a {
+                font-size: 1.5rem;
+                color: rgb(117, 164, 226);
+              }
+            }
+          }
+        }
+      }
+      .footDescription {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.5rem;
+        width: fit-content;
+        flex: 1 1 250px;
+        h2 {
+          color: rgb(117, 164, 226);
+          font-size: 2rem;
+          border-bottom: 3px rgb(117, 164, 226) dotted;
+          text-align: center;
+        }
+        nav {
+          text-align: center;
+          ul {
+            li {
+              list-style-type: none;
+              a {
+                font-size: 1.5rem;
+                color: rgb(255, 255, 255);
+              }
+            }
+          }
+          button {
+            border-radius: 1rem;
+            padding: 0.25rem;
+            font-size: 1rem;
+            color: #5a2d00;
+          }
+        }
+        input {
+          border-radius: 1rem;
+          padding: 0.5rem;
+          border: 2px solid #5a2d00;
+        }
+        input,
+        button {
+          margin: 0.5rem;
+          font-size: 1rem;
+        }
+        button:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .footerIcon {
+    display: flex;
+    justify-content: center;
+    nav {
+      text-align: center;
+      ul {
+        display: flex;
+        li {
+          list-style-type: none;
+          margin: 0 1rem;
+          a {
+            font-size: 1.5rem;
+            color: rgb(255, 255, 255);
+            img {
+              width: 5vw;
+              height: 5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    width: 100%;
+    text-align: center;
+    background-color: #5a2d00;
+    color: rgb(252, 252, 252);
+    font-size: 1.5rem;
+  }
+}
+@media screen and(max-width:600px) {
+  .footerPage {
+    .footerIcon {
+      nav {
+        ul {
+          li {
+            a {
+              img {
+                width: 10vw;
+                height: 10vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
