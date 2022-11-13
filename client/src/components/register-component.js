@@ -32,9 +32,7 @@ const RegisterComponent = () => {
     AuthService.register(username, email, password, role)
       .then(() => {
         //成功註冊後會顯示註冊成功，即將前往登入頁面
-        window.alert(
-          "Register succeeds. You are redirected to the login page."
-        );
+        window.alert("註冊成功，你即將回到登入頁面");
         //成功註冊後轉到登入頁面
         history("/login");
       })
@@ -55,6 +53,7 @@ const RegisterComponent = () => {
             className="form-control"
             name="username"
             placeholder="請輸入使用者名稱"
+            autoComplete="off"
           />
         </div>
         <br />
@@ -66,6 +65,7 @@ const RegisterComponent = () => {
             className="form-control"
             name="email"
             placeholder="請輸入email"
+            autoComplete="off"
           />
         </div>
         <br />
@@ -77,6 +77,7 @@ const RegisterComponent = () => {
             className="form-control"
             name="password"
             placeholder="請輸入密碼"
+            autoComplete="off"
           />
         </div>
         <br />
@@ -88,6 +89,7 @@ const RegisterComponent = () => {
             className="form-control"
             name="role"
             placeholder="請輸入職位"
+            autoComplete="off"
           />
         </div>
         <br />

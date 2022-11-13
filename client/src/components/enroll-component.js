@@ -27,7 +27,7 @@ const Enrollcomponent = (props) => {
   const handleEnroll = (e) => {
     CourseService.enroll(e.target.id, currentUser.user._id)
       .then(() => {
-        window.alert("Done Enrollment");
+        window.alert("註冊成功");
         history("/course");
       })
       .catch((err) => {

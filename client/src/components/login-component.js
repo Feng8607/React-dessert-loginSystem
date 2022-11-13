@@ -47,6 +47,7 @@ const LoginComponent = (props) => {
             className="form-control"
             name="email"
             placeholder="請輸入電子郵件"
+            autoComplete="off"
           />
         </div>
         <br />
@@ -58,6 +59,7 @@ const LoginComponent = (props) => {
             className="form-control"
             name="password"
             placeholder="請輸入密碼"
+            autoComplete="off"
           />
         </div>
         <br />
